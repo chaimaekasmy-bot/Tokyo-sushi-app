@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-jakarta: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-arabic: 'Noto Sans Arabic', system-ui, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-jakarta);
+    background-color: #0b0b0d;
+    color: #e5e5e7;
+    overflow-x: hidden;
+  }
+
+  [dir="rtl"] {
+    font-family: var(--font-arabic);
+  }
+}
+
+.font-zen {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.04em;
+}
+
+.font-ar {
+  font-family: 'Noto Sans Arabic', system-ui, sans-serif;
+}
+
+/* Subtle Japanese geometric patterns & scroll styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0d0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2a30;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
